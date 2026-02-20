@@ -11,7 +11,7 @@ export const Footer = () => {
   const t = useTranslations('Footer');
 
   return (
-    <Section className="pb-16 pt-0">
+    <Section id="company" className="pb-16 pt-0">
       <CenteredFooter
         logo={<Logo />}
         name={AppConfig.name}
@@ -77,32 +77,39 @@ export const Footer = () => {
         legalLinks={(
           <>
             <li>
-              <Link href="/sign-up">{t('terms_of_service')}</Link>
+              {/* <Link href="/sign-up">{t('terms_of_service')}</Link> */}
+              <span className="cursor-default">{t('terms_of_service')}</span>
             </li>
             <li>
-              <Link href="/sign-up">{t('privacy_policy')}</Link>
+              {/* <Link href="/sign-up">{t('privacy_policy')}</Link> */}
+              <span className="cursor-default">{t('privacy_policy')}</span>
             </li>
           </>
         )}
       >
         <li>
-          <Link href="/sign-up">{t('product')}</Link>
+          {/* <Link href="/sign-up">{t('product')}</Link> */}
+          <span className="cursor-default">{t('product')}</span>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('docs')}</Link>
+          {/* <Link href="/sign-up">{t('docs')}</Link> */}
+          <span className="cursor-default">{t('docs')}</span>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('blog')}</Link>
+          {/* <Link href="/sign-up">{t('blog')}</Link> */}
+          <span className="cursor-default">{t('blog')}</span>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('community')}</Link>
+          {/* <Link href="/sign-up">{t('community')}</Link> */}
+          <span className="cursor-default">{t('community')}</span>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('company')}</Link>
+          {/* <Link href="/sign-up">{t('company')}</Link> */}
+          <span className="cursor-default">{t('company')}</span>
         </li>
       </CenteredFooter>
     </Section>

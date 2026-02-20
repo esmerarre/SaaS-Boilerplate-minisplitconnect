@@ -5,18 +5,30 @@ export const Logo = (props: {
 }) => (
   <div className="flex items-center text-xl font-semibold">
     <svg
-      className="mr-1 size-8 stroke-current stroke-2"
+      className="mr-1 size-8"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
+      viewBox="0 0 32 32"
       fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
     >
-      <path d="M0 0h24v24H0z" stroke="none" />
-      <rect x="3" y="12" width="6" height="8" rx="1" />
-      <rect x="9" y="8" width="6" height="12" rx="1" />
-      <rect x="15" y="4" width="6" height="16" rx="1" />
-      <path d="M4 20h14" />
+      {/*
+        Path syntax legend:
+        - M x y : Move to (x,y) without drawing
+        - C x1 y1 x2 y2 x y : Cubic Bezier curve using control points (x1,y1), (x2,y2) ending at (x,y)
+      */}
+      <path
+        d="M2 17C10 28 18 6 30 17"
+        stroke="#3B82F6"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.5 23C10.5 31 19 11 29.5 21"
+        stroke="#10B981"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
     {!props.isTextHidden && AppConfig.name}
   </div>
